@@ -14,7 +14,7 @@ make install
 adduser --disabled-password --shell `which bash` --gecos "transmission,," transmission
 
 cd /etc/init.d
-wget https://raw.github.com/nick-desteffen/transmission-bootstrap/init.d/transmission-daemon
+wget https://raw.github.com/nick-desteffen/transmission-bootstrap/master/init.d/transmission-daemon
 chmod +x /etc/init.d/transmission-daemon
 
 update-rc.d transmission-daemon defaults
