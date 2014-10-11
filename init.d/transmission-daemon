@@ -122,19 +122,19 @@ do_stop()
 
 case "$1" in
   start)
-        echo "Starting $DESC" "$NAME..."
+        echo "Starting $DESC..."
         do_start
         case "$?" in
-                0|1) echo "   Starting $DESC $NAME succeeded" ;;
-                *)   echo "   Starting $DESC $NAME failed" ;;
+                0|1) echo "   Starting $DESC succeeded" ;;
+                *)   echo "   Starting $DESC failed" ;;
         esac
         ;;
   stop)
         echo "Stopping $DESC $NAME..."
         do_stop
         case "$?" in
-                0|1) echo "   Stopping $DESC $NAME succeeded" ;;
-                *)   echo "   Stopping $DESC $NAME failed" ;;
+                0|1) echo "   Stopping $DESC succeeded" ;;
+                *)   echo "   Stopping $DESC failed" ;;
         esac
         ;;
   restart|force-reload)
@@ -148,12 +148,12 @@ case "$1" in
           0|1)
                 do_start
                 case "$?" in
-                    0|1) echo "   Restarting $DESC $NAME succeeded" ;;
-                    *)   echo "   Restarting $DESC $NAME failed: couldn't start $NAME" ;;
+                    0|1) echo "   Restarting $DESC succeeded" ;;
+                    *)   echo "   Restarting $DESC failed: couldn't start $NAME" ;;
                 esac
                 ;;
           *)
-                echo "   Restarting $DESC $NAME failed: couldn't stop $NAME" ;;
+                echo "   Restarting $DESC failed: couldn't stop $NAME" ;;
         esac
         ;;
   *)
