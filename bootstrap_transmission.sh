@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-apt-get -y -m install build-essential libevent-dev intltool
+apt-get -y -m install build-essential libevent-dev intltool libssl-dev libcurl4-openssl-dev
 
 cd /tmp
 wget http://download.transmissionbt.com/files/transmission-2.84.tar.xz
 tar xvJf transmission-2.84.tar.xz
-cd transmission-2.84.tar.xz
+cd transmission-2.84
 
 ./configure
 make
