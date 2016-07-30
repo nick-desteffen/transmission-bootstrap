@@ -42,7 +42,7 @@ USERNAME=transmission
 # The arguments passed on to transmission-daemon.
 # ONLY change this you need to, otherwise use the
 # settings file as per above.
-#TRANSMISSION_ARGS=""
+TRANSMISSION_ARGS="--logfile /var/log/transmission.log"
 
 
 # ----- END OF CONFIGURATION -----
