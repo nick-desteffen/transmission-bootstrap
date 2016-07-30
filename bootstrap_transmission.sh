@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-apt-get -y -m install build-essential libevent-dev intltool libssl-dev libcurl4-openssl-dev
+apt-get -y -m install build-essential libevent-dev intltool libssl-dev libcurl4-openssl-dev pkg-config
 
 cd /tmp
 wget http://download.transmissionbt.com/files/transmission-2.92.tar.xz
@@ -19,4 +19,8 @@ chmod +x /etc/init.d/transmission-daemon
 
 update-rc.d transmission-daemon defaults
 
+cd /home/transmission
+wget https://raw.github.com/nick-desteffen/transmission-bootstrap/master/auto-unrar.sh
+
 /usr/local/bin/transmission-daemon --version
+

@@ -1,7 +1,7 @@
 Transmission Bootstrap
 ==============
 
-Bash script to install Transmission BitTorrent client (v2.8.4) and have the daemon run on boot.  Tested on Ubuntu 14.04.1.
+Bash script to install Transmission BitTorrent client (v2.9.2) and have the daemon run on boot.  Tested on Ubuntu 16.04.1.
   
   
 To bootstrap Transmission:  

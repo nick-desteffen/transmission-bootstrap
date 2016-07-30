@@ -12,7 +12,7 @@
   # Source directory, should not be changed.
   SRC_DIR="${TR_TORRENT_DIR}/${TR_TORRENT_NAME}"
   # Directory to store the un-compressed files in..
-  DEST_DIR="/media/downloads/${TR_TORRENT_DIR}/${TR_TORRENT_NAME}/"
+  DEST_DIR="/media/downloads/${TR_TORRENT_NAME}/"
   # This parameter string could be passed from Transmission in the future.
   TR_TORRENT_PARAMETER="EXTRACT SLEEP1h"
 
