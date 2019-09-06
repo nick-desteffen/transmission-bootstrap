@@ -3,9 +3,9 @@
 apt-get -y -m install build-essential libevent-dev intltool libssl-dev libcurl4-openssl-dev pkg-config
 
 cd /tmp
-wget https://github.com/transmission/transmission-releases/raw/master/transmission-2.93.tar.xz
-tar -xvJf transmission-2.93.tar.xz
-cd transmission-2.93
+wget https://github.com/transmission/transmission-releases/raw/master/transmission-2.94.tar.xz
+tar -xvJf transmission-2.94.tar.xz
+cd transmission-2.94
 
 ./configure
 make
