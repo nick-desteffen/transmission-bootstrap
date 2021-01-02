@@ -1,0 +1,16 @@
+[Unit]
+Description = Transmission
+
+[Service]
+ExecStart = /usr/local/bin/transmission-daemon -f --logfile /var/log/transmission.log --config-dir /home/transmission/transmission-daemon
+User = transmission
+Group = transmission
+Restart = always
+RestartSec = 240
+IOSchedulingClass = best-effort
+IOSchedulingPriority = 7
+Nice = 10
+CPUSchedulingPolicy = idle
+
+[Install]
+WantedBy = multi-user.target
